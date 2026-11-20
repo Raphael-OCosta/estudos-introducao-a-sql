@@ -1,0 +1,34 @@
+{
+  "files.associations": {
+    "*.sql": "sql"
+  },
+  "sqltools.useNodeRuntime": true,
+  "sqltools.autoOpenSessionFiles": false,
+  "sqltools.results.limit": 200,
+  "sqltools.connections": [
+    {
+      "name": "rexon_metals",
+      "driver": "SQLite",
+      "database": "C:\\estudos\\oreilly_getting_started_with_sql\\rexon_metals.db",
+      "previewLimit": 50
+    },
+    {
+      "name": "weather_stations",
+      "driver": "SQLite",
+      "database": "C:\\estudos\\oreilly_getting_started_with_sql\\weather_stations.db",
+      "previewLimit": 50
+    },
+    {
+      "name": "surgetech_conference",
+      "driver": "SQLite",
+      "database": "C:\\estudos\\oreilly_getting_started_with_sql\\surgetech_conference.db",
+      "previewLimit": 50
+    },
+    {
+      "name": "extra_practice (Chinook)",
+      "driver": "SQLite",
+      "database": "C:\\estudos\\oreilly_getting_started_with_sql\\extra_practice_database.db",
+      "previewLimit": 50
+    }
+  ]
+}

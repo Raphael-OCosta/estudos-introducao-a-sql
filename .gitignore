@@ -1,0 +1,18 @@
+# ambiente local
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+README_autor.md
+.gitignore_autor
+# arquivos do repositório original do autor (sem licença aberta): ficam só na máquina
+/extra_practice_database.db
+/extra_practice_examples/artist_and_album_with_tracks.txt
+/extra_practice_examples/grunge_playlist.txt
+/extra_practice_examples/total_sales_by_country.txt
+/extra_practice_examples/total_sales_by_customer.txt
+/rexon_metals.db
+/surgetech_conference.db
+/weather_stations.db
+# consultas transcritas do livro: ficam só na máquina
+/estudos/*.sql
+*.db
