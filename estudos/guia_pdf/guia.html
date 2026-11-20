@@ -63,7 +63,7 @@
   .steps > li::before { content: counter(s); position: absolute; left: 0; top: 0.3mm; width: 7mm; height: 7mm; border-radius: 50%; background: var(--brand-soft); color: var(--brand); font-weight: 700; font-size: 10pt; text-align: center; line-height: 7mm; }
   .steps ul { margin: 1mm 0 0; padding-left: 5mm; }
   .see { display: block; margin-top: 1mm; color: var(--green); font-size: 10pt; }
-  .see::before { content: "✔ Você deve ver: "; font-weight: 700; }
+  .see::before { content: "Você deve ver: "; font-weight: 700; }
 
   .step-head { display: flex; align-items: center; gap: 3mm; margin: 6mm 0 2mm; break-after: avoid; }
   .step-head .badge { background: var(--brand); color: #fff; font-weight: 700; border-radius: 6px; padding: 1mm 3mm; font-size: 11pt; }
@@ -87,7 +87,7 @@
 
   .checklist { list-style: none; padding: 0; }
   .checklist li { padding-left: 7mm; position: relative; margin-bottom: 1.5mm; }
-  .checklist li::before { content: "☐"; position: absolute; left: 0; color: var(--brand); font-size: 12pt; line-height: 1.2; }
+  .checklist li::before { content: ""; position: absolute; left: 0; color: var(--brand); font-size: 12pt; line-height: 1.2; }
   footer { color: var(--muted); font-size: 9pt; text-align: center; margin-top: 8mm; }
 </style>
 </head>
@@ -135,12 +135,12 @@
   <p>Antes de começar, entenda o papel de cada peça. Pense numa aula: alguém explica, existe um material para praticar e você tem um caderno.</p>
 
   <div class="cards">
-    <div class="card"><div class="t">📘 O livro (PDF)</div>Explica o assunto e mostra as consultas que você vai digitar.<div class="a">É o professor.</div></div>
-    <div class="card"><div class="t">🗄️ Arquivos .db</div>Os bancos de dados, com as tabelas usadas no livro. Ficam na pasta do curso.<div class="a">São como planilhas do Excel com os dados.</div></div>
-    <div class="card"><div class="t">✍️ SQL</div>A linguagem em que você escreve perguntas para o banco, por exemplo “quais clientes moram no Texas?”.<div class="a">São como as fórmulas do Excel.</div></div>
-    <div class="card"><div class="t">💻 VS Code + SQLTools</div>Onde você <b>escreve e roda</b> suas consultas. Tudo fica salvo nos arquivos <code>capXX.sql</code>.<div class="a">É o seu caderno.</div></div>
-    <div class="card"><div class="t">🔍 DBeaver</div>Onde você <b>olha</b> as tabelas, as colunas e os dados com o mouse, e vê diagramas.<div class="a">É o “explorador de arquivos” do banco.</div></div>
-    <div class="card"><div class="t">🧩 SQLiteStudio</div>O programa que o livro usa. <b>Você não precisa dele</b>: o VS Code e o DBeaver fazem o mesmo.<div class="a">Veja a página de “tradução”.</div></div>
+    <div class="card"><div class="t">O livro (PDF)</div>Explica o assunto e mostra as consultas que você vai digitar.<div class="a">É o professor.</div></div>
+    <div class="card"><div class="t">Arquivos .db</div>Os bancos de dados, com as tabelas usadas no livro. Ficam na pasta do curso.<div class="a">São como planilhas do Excel com os dados.</div></div>
+    <div class="card"><div class="t">SQL</div>A linguagem em que você escreve perguntas para o banco, por exemplo “quais clientes moram no Texas?”.<div class="a">São como as fórmulas do Excel.</div></div>
+    <div class="card"><div class="t">VS Code + SQLTools</div>Onde você <b>escreve e roda</b> suas consultas. Tudo fica salvo nos arquivos <code>capXX.sql</code>.<div class="a">É o seu caderno.</div></div>
+    <div class="card"><div class="t">DBeaver</div>Onde você <b>olha</b> as tabelas, as colunas e os dados com o mouse, e vê diagramas.<div class="a">É o “explorador de arquivos” do banco.</div></div>
+    <div class="card"><div class="t">SQLiteStudio</div>O programa que o livro usa. <b>Você não precisa dele</b>: o VS Code e o DBeaver fazem o mesmo.<div class="a">Veja a página de “tradução”.</div></div>
   </div>
 
   <div class="note info"><span class="h">Os 4 bancos de dados</span>
@@ -174,7 +174,7 @@
       <span class="see">no painel da esquerda (ícone de folhas, <i>Explorer</i>), os arquivos <code>.db</code> e a pasta <code>estudos</code>.</span></li>
   </ol>
 
-  <div class="note warn"><span class="h">⚠ Importante: confira o canto inferior esquerdo</span>
+  <div class="note warn"><span class="h">Importante: confira o canto inferior esquerdo</span>
     Se aparecer escrito <b>Restricted Mode</b> no rodapé do VS Code, a pasta ainda não é confiável e o SQLTools fica desligado (o ícone dele não aparece).
     Clique em <b>Restricted Mode → Trust</b> e, se o VS Code pedir, recarregue a janela.
   </div>
@@ -195,7 +195,7 @@
     <li>Você verá a linha <code>SELECT * FROM CUSTOMER;</code></li>
     <li>Logo <b>acima</b> dessa linha há um texto pequeno e clicável: <b>Run on active connection</b>. Clique nele.
       <ul><li>Outra forma: selecione a linha com o mouse e aperte <kbd>Ctrl</kbd>+<kbd>E</kbd> duas vezes.</li></ul>
-      <span class="see">uma aba à direita com uma tabela de <b>5 clientes</b>. Você rodou SQL! 🎉</span></li>
+      <span class="see">uma aba à direita com uma tabela de <b>5 clientes</b>. Você rodou SQL! </span></li>
     <li>Na barra inferior do VS Code aparece qual conexão está ativa (ex.: <code>rexon_metals</code>).</li>
   </ol>
 </section>
@@ -224,7 +224,7 @@
       <span class="see">os mesmos 5 clientes, no painel de baixo.</span></li>
   </ol>
 
-  <div class="note tip"><span class="h">✔ Pronto para começar? Confira:</span>
+  <div class="note tip"><span class="h">Pronto para começar? Confira:</span>
     <ul class="checklist" style="margin:1mm 0 0">
       <li>O VS Code abre a pasta do curso sem <b>Restricted Mode</b>.</li>
       <li>O SQLTools conecta no <code>rexon_metals</code> (ponto verde).</li>
